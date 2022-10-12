@@ -14,16 +14,16 @@ const Modal = ({isOpen, onClose}) => {
           </h1>
           <p className="App-text">Don't forget to download the app to start applying this knowledge right away</p>
           <div className="download__container">
+            <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
             <div className="download__store">
-              <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
               <img className="modal__store_apple" src={AppStore} alt="AppStore"/>
-              </a>
             </div>
+            </a>
+            <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
             <div className="download__store">
-              <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
               <img className="modal__store_google" src={GooglePlay} alt="GooglePlay"/>
-              </a>
             </div>
+            </a>
           </div>
         </div>
       </section>
