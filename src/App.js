@@ -51,16 +51,16 @@ function App() {
       <section className="download">
         <p className="download__text">or Download Now!</p>
         <div className="download__container">
+          <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
           <div className="download__store">
-            <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
             <img className="download__store_apple" src={AppStore} alt="AppStore"/>
-            </a>
           </div>
+          </a>
+          <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
           <div className="download__store">
-            <a href="https://sensualcourse.onelink.me/nmz6/952g0uee">
             <img className="download__store_google" src={GooglePlay} alt="GooglePlay"/>
-            </a>
           </div>
+          </a>
         </div>
       </section>
       <footer className="footer">
