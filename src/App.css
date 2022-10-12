@@ -1,0 +1,240 @@
+.App {
+  background: #141414;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 20px;
+  width: 92px;
+  margin: 50px 0 0 0;
+}
+
+.kegel-pic {
+  width: auto;
+  height: 355px;
+  position: absolute;
+  top: 102px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.App-header {
+  position: relative;
+  font-family: Steinbeck, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+  max-width: 327px;
+  margin: 309px auto 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.App-text {
+  font-family: "Uncut Sans Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 16px auto 32px;
+  padding: 0;
+  color: #fff;
+  max-width: 310px;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.form__input {
+  width: 333px;
+  height: 54px;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: transparent;
+  text-align: center;
+  font-family: "Uncut Sans Medium", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D9D9D9;
+  box-sizing: content-box;
+  padding: 0;
+}
+
+.form__btn {
+  height: 56px;
+  width: 335px;
+  border-radius: 12px;
+  background: #E04040;
+  color: #fff;
+  margin: 0 auto;
+  border: none;
+  box-sizing: content-box;
+  padding: 0;
+  font-family: "Uncut Sans Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.form__btn:hover, .form__btn:active {
+  background-color: rgba(224, 64, 64, 0.9);
+}
+
+.download__text {
+  padding: 0;
+  margin: 32px auto 24px;
+  font-family: "Uncut Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.download__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download__store {
+  height: 58px;
+  width: 162px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__store:hover, .download__store:active {
+  opacity: 0.5;
+}
+
+.download__store_apple {
+  height: 28px;
+  width: 108px;
+}
+
+.download__store_google {
+  height: 28px;
+  width: 127px;
+}
+
+.footer {
+  margin: 116px auto 19px;
+  padding-bottom: 19px;
+}
+.footer__text {
+  font-family: "Uncut Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__header {
+  font-family: Steinbeck, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+  color: #fff;
+  max-width: 327px;
+  margin: 88px auto 0;
+  padding: 0;
+}
+
+.modal {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out;
+  transition-property: opacity, visibility;
+  transition-duration: 0.7s, 0s;
+  transition-delay: 0s, 0.7s;
+}
+
+.modal_opened {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s, 0s;
+}
+
+.modal__container {
+  width: 375px;
+  position: relative;
+  box-sizing: border-box;
+  height: 580px;
+  background: #101010;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-image: url(./images/cross.svg);
+  height: 32px;
+  width: 32px;
+}
+
+.modal__close:hover, .modal__close:active {
+  opacity: 0.5;
+}
+
+.modal__store {
+  box-sizing: border-box;
+  width: 162px;
+  height: 58px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__store_apple {
+  width: 108px;
+  height: 28px;
+}
+
+.modal__store_google {
+  width: 128px;
+  height: 28px;
+}
